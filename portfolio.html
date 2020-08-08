@@ -317,8 +317,32 @@
             </li>
           </ul>
         </div>
-        <p class="mailing">Подпишитесь на рассылку</p>
-        <button type="button" class="footer-button">Подписаться</button>
+        <div class="sign-sent-block">
+          <b class="sign-sents">Подпишитесь на рассылку</b>
+
+          <div class="fotter-email-form">
+            <form class="fotter-form">
+              <input type="email" name="email" placeholder="E-mail" />
+              <button type="submit" class="footer-button">Подписаться</button>
+            </form>
+          </div>
+        </div>
+
+        <script>
+          (() => {
+            document
+              .querySelector(".js-speaker-form")
+              .addEventListener("submit", (e) => {
+                e.preventDefault();
+
+                new FormData(e.currentTarget).forEach((value, name) =>
+                  console.log(`${name}: ${value}`)
+                );
+
+                e.currentTarget.reset();
+              });
+          })();
+        </script>
       </div>
     </footer>
   </body>
