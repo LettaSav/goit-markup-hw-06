@@ -53,29 +53,43 @@
             <h1 class="hero-title">
               Эффективные решения для вашего бизнеса
             </h1>
-            <button type="button" class="hero-button" data-modal-open >Заказать услугу</button>
+            <button data-modal-open  type="button" class="hero-button" >Заказать услугу</button>
           </div>
-          <div class="hero-form" data-modal>
-            <!-- <div class="form-hidden is-hidden"> -->
+          <div  data-modal class="hero-form is-hidden">
           <form class="hero-form-block">
-             <button type="button" class="form-btn-close" data-modal-close ></button>
-              <b class="form-sent">  Оставьте свои данные, мы вам перезвоним</b>
+             <button data-modal-close type="button" class="form-btn-close" ></button>
+               <svg width="11  " height="11" class="icon-cross">
+                <use href="./img/sprite/formsprite.svg#icon-cross"></use>
+              </svg>
+             <b class="form-sent">  Оставьте свои данные, мы вам перезвоним</b>
               <div class="input-cont">
             <input type="name" name="name" id="name" class="input" placeholder=" "/>
             <label for="name" class="form-label"> Имя </label>
+             <svg width="12 " height="12" class="form-icons">
+              <use href="./img/sprite/formsprite.svg#icon-nameform"></use>
+            </svg>
             </div>
             <div class="input-cont">
             <input type="tel" name="number" id="number" class="input" placeholder=" "/>
             <label for="number" class="form-label" > Телефон</label>
-            </div>
+             <svg width="13 " height="13" class="form-icons">
+              <use href="./img/sprite/formsprite.svg#icon-formphone"></use>
+            </svg>
+          </div>
             <div class="input-cont">
             <input type="email" name="email" id="email" class="input" placeholder=" "/>
             <label for="email" class="form-label"> Почта</label>
+            <svg width="15" height="12" class="form-icons">
+              <use href="./img/sprite/formsprite.svg#icon-formmail"></use>
+            </svg>
             </div>
             <textarea placeholder="Комментарий " class="textarea-form"></textarea>
-            <label for="checkbox" class="checkbox"> 
-              <input type="checkbox" name="checkbox" id="checkbox" /> <span class="checkbox-sent">Соглашаюсь с рассылкой и принимаю  <a href="#"> Условия договора </a></span> </label>
-            <button type="submit" class="form-btn" data-modal-close >Отправить</button>
+            <label for="checkbox" class="checkbox-label"> 
+              <input type="checkbox" name="checkbox" id="checkbox" class="checkbox" />
+              <span class="checkbox-castom"></span>
+              <span class="checkbox-sent">Соглашаюсь с рассылкой и принимаю  <a href="#"> Условия договора </a></span>
+             </label>
+            <button type="submit" class="form-btn" >Отправить</button>
           </form>
           </div>
           <!-- </div> -->
