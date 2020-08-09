@@ -53,23 +53,32 @@
             <h1 class="hero-title">
               Эффективные решения для вашего бизнеса
             </h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+            <button type="button" class="hero-button" data-modal-open >Заказать услугу</button>
           </div>
-          <div class="hero-form" data-modal="">
-            <div class="form-hidden"></div>
+          <div class="hero-form" data-modal>
+            <!-- <div class="form-hidden is-hidden"> -->
           <form class="hero-form-block">
-            <label for="name"> Имя </label>
-            <input type="name" name="name" id="name"/>
-            <label for="number"> Телефон</label>
-            <input type="tel" name="number" id="number"/>
-            <label for="email"> Почта</label>
-            <input type="email" name="email" id="email"/>
-            <textarea placeholder="Комментарий "></textarea>
-            <label for="checkbox">Соглашаюсь с рассылкой и принимаю Условия договора </label>
-              <input type="checkbox" name="checkbox" id="checkbox"/>
-            <button type="submit">Отправить</button>
+             <button type="button" class="form-btn-close" data-modal-close ></button>
+              <b class="form-sent">  Оставьте свои данные, мы вам перезвоним</b>
+              <div class="input-cont">
+            <input type="name" name="name" id="name" class="input" placeholder=" "/>
+            <label for="name" class="form-label"> Имя </label>
+            </div>
+            <div class="input-cont">
+            <input type="tel" name="number" id="number" class="input" placeholder=" "/>
+            <label for="number" class="form-label" > Телефон</label>
+            </div>
+            <div class="input-cont">
+            <input type="email" name="email" id="email" class="input" placeholder=" "/>
+            <label for="email" class="form-label"> Почта</label>
+            </div>
+            <textarea placeholder="Комментарий " class="textarea-form"></textarea>
+            <label for="checkbox" class="checkbox"> 
+              <input type="checkbox" name="checkbox" id="checkbox" /> <span class="checkbox-sent">Соглашаюсь с рассылкой и принимаю  <a href="#"> Условия договора </a></span> </label>
+            <button type="submit" class="form-btn" data-modal-close >Отправить</button>
           </form>
           </div>
+          <!-- </div> -->
         </div>
       </section>
       <!--Features-->
@@ -432,7 +441,7 @@
         </div>
         </div>
         
-     <script> 
+     <!-- <script> 
        (() => {
         document
           .querySelector('.js-speaker-form')
@@ -446,8 +455,9 @@
             e.currentTarget.reset();
           });
       })();
-      </script> 
+      </script>  -->
       </div>
     </footer>
+     <script src="./js/modal.js"></script>
   </body>
 </html>
